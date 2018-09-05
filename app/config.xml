@@ -22,6 +22,9 @@
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
+        <edit-config target="NSContactsUsageDescription" file="*-Info.plist" mode="merge">
+            <string>need contacts access to search friends</string>
+        </edit-config>
     </platform>
     <plugin name="cordova-plugin-crosswalk-webview" spec="^2.4.0">
         <variable name="XWALK_VERSION" value="23+" />
@@ -37,4 +40,5 @@
     <engine name="browser" spec="^5.0.4" />
     <engine name="android" spec="^7.0.0" />
     <engine name="ios" spec="^4.5.5" />
+    <plugin name="cordova-plugin-contacts" spec="^3.0.1" />
 </widget>

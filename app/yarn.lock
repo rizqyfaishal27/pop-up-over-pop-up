@@ -1757,6 +1757,10 @@ cordova-plugin-contacts-phonenumbers@0.0.11:
   version "0.0.11"
   resolved "https://registry.yarnpkg.com/cordova-plugin-contacts-phonenumbers/-/cordova-plugin-contacts-phonenumbers-0.0.11.tgz#704382c590ae0c40e6e1a9bb577da3c3d5133749"
 
+cordova-plugin-contacts@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/cordova-plugin-contacts/-/cordova-plugin-contacts-3.0.1.tgz#37aadabec93c982c04a3dcda0e4f1cfa096a84ab"
+
 cordova-plugin-crosswalk-webview@^2.4.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/cordova-plugin-crosswalk-webview/-/cordova-plugin-crosswalk-webview-2.4.0.tgz#90717bc4315c92d3182782fcba6b7ad89e532311"

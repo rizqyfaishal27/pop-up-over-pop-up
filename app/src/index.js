@@ -12,6 +12,12 @@ import './global-styles';
 import "babel-polyfill";
 import 'es6-promise/auto';
 
+document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
+	console.log(navigator.contacts);
+	document.getElementById('app').innerHTML = JSON.stringify(navigator.contacts);
+}
+
   
 const initialState = {};
 const history = createHistory();
