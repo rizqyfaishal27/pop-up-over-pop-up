@@ -15,6 +15,7 @@
     "dependencies": {
         "axios": "^0.18.0",
         "cordova-android": "^7.0.0",
+        "cordova-android-support-gradle-release": "^1.4.4",
         "cordova-browser": "^5.0.4",
         "cordova-ios": "^4.5.5",
         "cordova-plugin-contacts-phonenumbers": "0.0.11",
@@ -52,7 +53,10 @@
                 "XWALK_MODE": "embedded",
                 "XWALK_MULTIPLEAPK": "true"
             },
-            "cordova-plugin-contacts-phonenumbers": {}
+            "cordova-plugin-contacts-phonenumbers": {},
+            "cordova-android-support-gradle-release": {
+                "ANDROID_SUPPORT_VERSION": "27.+"
+            }
         },
         "platforms": [
             "browser",

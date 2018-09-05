@@ -1591,6 +1591,12 @@ cookie@0.3.1:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/cookie/-/cookie-0.3.1.tgz#e7e0a1f9ef43b4c8ba925c5c5a96e806d16873bb"
 
+cordova-android-support-gradle-release@^1.4.4:
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/cordova-android-support-gradle-release/-/cordova-android-support-gradle-release-1.4.4.tgz#6a64db69f36c332727d95b421d53c25dfe99684d"
+  dependencies:
+    xml2js "~0.4.19"
+
 cordova-android@^7.0.0:
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/cordova-android/-/cordova-android-7.1.1.tgz#711559ee18f5f625a2348d4ce348930d14890e2d"
@@ -5230,7 +5236,7 @@ sax@1.1.4:
   version "1.1.4"
   resolved "http://registry.npmjs.org/sax/-/sax-1.1.4.tgz#74b6d33c9ae1e001510f179a91168588f1aedaa9"
 
-sax@^1.2.4, sax@~1.2.1:
+sax@>=0.6.0, sax@^1.2.4, sax@~1.2.1:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
 
@@ -6211,9 +6217,20 @@ xml-escape@1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/xml-escape/-/xml-escape-1.1.0.tgz#3904c143fa8eb3a0030ec646d2902a2f1b706c44"
 
+xml2js@~0.4.19:
+  version "0.4.19"
+  resolved "https://registry.yarnpkg.com/xml2js/-/xml2js-0.4.19.tgz#686c20f213209e94abf0d1bcf1efaa291c7827a7"
+  dependencies:
+    sax ">=0.6.0"
+    xmlbuilder "~9.0.1"
+
 xmlbuilder@8.2.2:
   version "8.2.2"
   resolved "https://registry.yarnpkg.com/xmlbuilder/-/xmlbuilder-8.2.2.tgz#69248673410b4ba42e1a6136551d2922335aa773"
+
+xmlbuilder@~9.0.1:
+  version "9.0.7"
+  resolved "https://registry.yarnpkg.com/xmlbuilder/-/xmlbuilder-9.0.7.tgz#132ee63d2ec5565c557e20f4c22df9aca686b10d"
 
 xmldom@0.1.x:
   version "0.1.27"
