@@ -1,5 +1,10 @@
 # Pop up over pop up
 
+```sh
+$ cd app
+$ npm install
+```
+
 ## Build webpack (required)
 
 ```sh
