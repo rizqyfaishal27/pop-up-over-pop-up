@@ -1,6 +1,6 @@
 # Pop up over pop up
 
-## Build webpack
+## Build webpack (required)
 
 ```sh
 $ cd app
