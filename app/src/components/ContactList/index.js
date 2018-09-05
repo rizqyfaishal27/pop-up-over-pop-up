@@ -9,12 +9,13 @@ const ContactListWrapper = styled.div`
   flex-direction: column;
   border-radius: 5px;
   border: 1px solid #ddd;
-  max-height: 400px;
+  max-height: 312px;
   overflow-y: scroll;
   padding: 0.5rem;
 
   & > div {
     padding: 0.5rem 0;
+    margin: 1rem 0.25rem;
 
     &.no-found {
       text-align: center;
@@ -26,7 +27,7 @@ const ContactListWrapper = styled.div`
     }
 
     & > div {
-      margin: 0.5rem 0.25rem; 
+      margin: 1rem 0.25rem; 
       font-size: 90%;
     }
 
@@ -57,11 +58,7 @@ const ContactList = (props) => {
       { props.contacts.map((contact, index) => (
           <div key={index} onClick={() => { props.onContactClick(index) }}>
             <div>
-              {contact.firstName + 
-                (!isUndefined(contact.middleName) ? ' ' + contact.middleName : '') + 
-                (!isUndefined(contact.lastName) ? ' ' + contact.lastName : '') 
-                + ' - ' + contact.phoneNumbers[0].number
-              } 
+              { contact.displayName  + ' - ' + contact.phoneNumbers[0].value }
             </div>
           </div>
         ))}  
