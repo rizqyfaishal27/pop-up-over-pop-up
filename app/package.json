@@ -6,7 +6,9 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "webpack -p --progress"
+        "build:webpack": "webpack -p --progress",
+        "build:android": "cordova build android",
+        "build:ios": "cordova build ios"
     },
     "author": "Apache Cordova Team",
     "license": "Apache-2.0",
@@ -66,6 +68,7 @@
         "babel-preset-react": "^6.3.13",
         "babel-preset-react-hmre": "^1.0.1",
         "babel-preset-stage-0": "^6.24.1",
+        "cordova": "^8.0.0",
         "css-loader": "^0.23.1",
         "elementtree": "^0.1.7",
         "file-loader": "^1.1.11",
