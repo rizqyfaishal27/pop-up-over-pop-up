@@ -120,9 +120,10 @@ class HomePage extends Component {
 	}
 
 	onPhoneBookClick(index) {
+		const container = this;
 		navigator.contacts.pickContact(function(contact){
 			console.log(contact);
-	        this.inputRef[index].current.value = JSON.stringify(contact);
+	        container.inputRef[index].current.value = contact.phoneNumbers[0].value;
 	    },function(err){
 	        console.log('Error: ' + err);
 	    });
