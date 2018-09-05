@@ -12,13 +12,18 @@ import './global-styles';
 import "babel-polyfill";
 import 'es6-promise/auto';
 
+
   
 const initialState = {};
 const history = createHistory();
 const store = configureStore(initialState, history);
 
+document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
+	
 ReactDOM.render((<Provider store={store}>
       <ConnectedRouter history={history}>
           <App />
         </ConnectedRouter>
-    </Provider>), document.getElementById('app'));
+    </Provider>), document.getElementById('app'));	
+}
