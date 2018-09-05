@@ -120,10 +120,12 @@ class HomePage extends Component {
 	}
 
 	onPhoneBookClick(index) {
-		this.setState({
-			currentPhoneBook: index,
-			showPhoneBookDialog: true
-		})
+		navigator.contacts.pickContact(function(contact){
+			console.log(contact);
+	        this.inputRef[index].current.value = JSON.stringify(contact);
+	    },function(err){
+	        console.log('Error: ' + err);
+	    });
 	}
 
 	onCancelSelectDialog() {
